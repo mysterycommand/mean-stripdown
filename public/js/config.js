@@ -1,8 +1,18 @@
 //Setting up route
 window.app.config(['$routeProvider', function($routeProvider) {
 	$routeProvider
-	.when('/', { templateUrl: 'views/index.html' })
-	.otherwise({redirectTo: '/'});
+	.when('/', {
+    templateUrl: 'views/index.html'
+  })
+  .when('/nfl-teams', {
+    templateUrl: 'views/nfl/list.html'
+  })
+  .when('/nfl-teams/:nflTeamId', {
+    templateUrl: 'views/nfl/view.html'
+  })
+	.otherwise({
+    redirectTo: '/'
+  });
 }]);
 
 //Removing tomcat unspported headers
