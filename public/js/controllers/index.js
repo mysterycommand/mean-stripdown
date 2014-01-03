@@ -1,5 +1,5 @@
 window.angular.module('ngff.controllers.index', [])
-  .controller('IndexController', [
+  .controller('IndexCtrl', [
     function() {
 
     }]);

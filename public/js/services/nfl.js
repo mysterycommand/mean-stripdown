@@ -227,5 +227,33 @@ window.angular.module('ngff.services.nfl', [])
         division: "East"
       }
     ];
+
+    NFL.positions = [
+      {
+        abbr: "QB",
+        pos: "Quarterback"
+      },
+      {
+        abbr: "RB",
+        pos: "Runningback"
+      },
+      {
+        abbr: "WR",
+        pos: "Wide Receiver"
+      },
+      {
+        abbr: "TE",
+        pos: "Tight End"
+      },
+      {
+        abbr: "K",
+        pos: "Kicker"
+      },
+      {
+        abbr: "D/S",
+        pos: "Defense/Special Teams"
+      }
+    ];
+
     return NFL;
   });

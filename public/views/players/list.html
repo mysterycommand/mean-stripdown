@@ -1,0 +1,13 @@
+<div ng-controller="PlayersCtrl" ng-init="find()">
+  <input type="text" ng-model="search.name">
+  <positions></positions>
+  <nfl-teams></nfl-teams>
+  <search-ct></search-ct>
+  <table>
+    <tr ng-repeat="player in players | filter:search | filter:strictSearch:true | limitTo:limitCt">
+      <td>{{ player.name }}<span ng-show="player.num"> - #{{ player.num }}</span></td>
+      <td>{{ positions[player.pos].abbr }}</td>
+      <td>{{ nflteams[player.team].abbr }}</td>
+    </tr>
+  </table>
+</div>
